@@ -1,0 +1,635 @@
+﻿[静态页面，速率50]
+httperf --timeout=5 --client=0/1 --server=10.1.18.95 --port=8081 --uri=/Test/static.html --rate=50 --send-buffer=4096 --recv-buffer=16384 --num-conns=1000 --num-calls=1
+httperf: warning: open file limit > FD_SETSIZE; limiting max. # of open files to FD_SETSIZE
+Maximum connect burst length: 1
+
+Total: connections 1000 requests 1000 replies 997 test-duration 19.986 s
+
+Connection rate: 50.0 conn/s (20.0 ms/conn, <=11 concurrent connections)
+Connection time [ms]: min 5.6 avg 7.1 max 186.7 median 6.5 stddev 10.4
+Connection time [ms]: connect 0.3
+Connection length [replies/conn]: 1.000
+
+Request rate: 50.0 req/s (20.0 ms/req)
+Request size [B]: 79.0
+
+Reply rate [replies/s]: min 49.4 avg 49.8 max 50.0 stddev 0.4 (3 samples)
+Reply time [ms]: response 3.0 transfer 3.8
+Reply size [B]: header 195.0 content 42971.0 footer 0.0 (total 43166.0)
+Reply status: 1xx=0 2xx=997 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 4.25 system 15.73 (user 21.3% system 78.7% total 100.0%)
+Net I/O: 2106.7 KB/s (17.3*10^6 bps)
+
+Errors: total 3 client-timo 3 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+
+
+[静态页面，速率100]
+httperf --timeout=5 --client=0/1 --server=10.1.18.95 --port=8081 --uri=/Test/static.html --rate=100 --send-buffer=4096 --recv-buffer=16384 --num-conns=1000 --num-calls=1
+httperf: warning: open file limit > FD_SETSIZE; limiting max. # of open files to FD_SETSIZE
+Maximum connect burst length: 1
+
+Total: connections 1000 requests 1000 replies 998 test-duration 9.996 s
+
+Connection rate: 100.0 conn/s (10.0 ms/conn, <=7 concurrent connections)
+Connection time [ms]: min 5.3 avg 6.1 max 72.2 median 5.5 stddev 3.5
+Connection time [ms]: connect 0.2
+Connection length [replies/conn]: 1.000
+
+Request rate: 100.0 req/s (10.0 ms/req)
+Request size [B]: 79.0
+
+Reply rate [replies/s]: min 99.6 avg 99.6 max 99.6 stddev 0.0 (1 samples)
+Reply time [ms]: response 2.1 transfer 3.7
+Reply size [B]: header 195.0 content 42971.0 footer 0.0 (total 43166.0)
+Reply status: 1xx=0 2xx=998 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 1.92 system 8.07 (user 19.2% system 80.8% total 100.0%)
+Net I/O: 4216.4 KB/s (34.5*10^6 bps)
+
+Errors: total 2 client-timo 2 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+
+
+[静态页面，速率150]
+httperf --timeout=5 --client=0/1 --server=10.1.18.95 --port=8081 --uri=/Test/static.html --rate=150 --send-buffer=4096 --recv-buffer=16384 --num-conns=1000 --num-calls=1
+httperf: warning: open file limit > FD_SETSIZE; limiting max. # of open files to FD_SETSIZE
+Maximum connect burst length: 1
+
+Total: connections 1000 requests 1000 replies 996 test-duration 8.748 s
+
+Connection rate: 114.3 conn/s (8.7 ms/conn, <=6 concurrent connections)
+Connection time [ms]: min 5.3 avg 6.0 max 39.4 median 5.5 stddev 1.6
+Connection time [ms]: connect 0.3
+Connection length [replies/conn]: 1.000
+
+Request rate: 114.3 req/s (8.7 ms/req)
+Request size [B]: 79.0
+
+Reply rate [replies/s]: min 149.2 avg 149.2 max 149.2 stddev 0.0 (1 samples)
+Reply time [ms]: response 1.9 transfer 3.8
+Reply size [B]: header 195.0 content 42971.0 footer 0.0 (total 43166.0)
+Reply status: 1xx=0 2xx=996 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 1.60 system 7.15 (user 18.3% system 81.7% total 100.0%)
+Net I/O: 4808.4 KB/s (39.4*10^6 bps)
+
+Errors: total 4 client-timo 4 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+
+[静态页面，速率200]
+httperf --timeout=5 --client=0/1 --server=10.1.18.95 --port=8081 --uri=/Test/static.html --rate=200 --send-buffer=4096 --recv-buffer=16384 --num-conns=1000 --num-calls=1
+httperf: warning: open file limit > FD_SETSIZE; limiting max. # of open files to FD_SETSIZE
+httperf.parse_status_line: invalid status line `0'!!
+httperf.parse_status_line: bad status 0
+Maximum connect burst length: 1
+
+Total: connections 1000 requests 1000 replies 998 test-duration 5.002 s
+
+Connection rate: 199.9 conn/s (5.0 ms/conn, <=5 concurrent connections)
+Connection time [ms]: min 5.7 avg 6.4 max 18.3 median 6.5 stddev 0.7
+Connection time [ms]: connect 0.9
+Connection length [replies/conn]: 1.000
+
+Request rate: 199.9 req/s (5.0 ms/req)
+Request size [B]: 79.0
+
+Reply rate [replies/s]: min 199.4 avg 199.4 max 199.4 stddev 0.0 (1 samples)
+Reply time [ms]: response 1.8 transfer 3.7
+Reply size [B]: header 195.0 content 42971.0 footer 0.0 (total 43166.0)
+Reply status: 1xx=0 2xx=998 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 0.88 system 4.13 (user 17.5% system 82.5% total 100.0%)
+Net I/O: 8426.3 KB/s (69.0*10^6 bps)
+
+Errors: total 2 client-timo 1 socket-timo 0 connrefused 0 connreset 1
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+
+[静态页面，速率250]
+httperf --timeout=5 --client=0/1 --server=10.1.18.95 --port=8081 --uri=/Test/static.html --rate=250 --send-buffer=4096 --recv-buffer=16384 --num-conns=1000 --num-calls=1
+httperf: warning: open file limit > FD_SETSIZE; limiting max. # of open files to FD_SETSIZE
+httperf.parse_status_line: invalid status line `TTP/'!!
+httperf.parse_status_line: bad status 0
+httperf.get_line: truncating header from 1422 to 1024 bytes
+Maximum connect burst length: 1
+
+Total: connections 1000 requests 1000 replies 994 test-duration 5.482 s
+
+Connection rate: 182.4 conn/s (5.5 ms/conn, <=13 concurrent connections)
+Connection time [ms]: min 6.0 avg 7.1 max 53.9 median 6.5 stddev 3.7
+Connection time [ms]: connect 1.0
+Connection length [replies/conn]: 1.000
+
+Request rate: 182.4 req/s (5.5 ms/req)
+Request size [B]: 79.0
+
+Reply rate [replies/s]: min 198.8 avg 198.8 max 198.8 stddev 0.0 (1 samples)
+Reply time [ms]: response 2.1 transfer 4.1
+Reply size [B]: header 238.0 content 42927.0 footer 0.0 (total 43165.0)
+Reply status: 1xx=0 2xx=993 3xx=0 4xx=0 5xx=1
+
+CPU time [s]: user 0.75 system 4.73 (user 13.7% system 86.3% total 100.0%)
+Net I/O: 7657.1 KB/s (62.7*10^6 bps)
+
+Errors: total 6 client-timo 5 socket-timo 0 connrefused 0 connreset 1
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+
+[静态页面，速率300]
+httperf --timeout=5 --client=0/1 --server=10.1.18.95 --port=8081 --uri=/Test/static.html --rate=300 --send-buffer=4096 --recv-buffer=16384 --num-conns=1000 --num-calls=1
+httperf: warning: open file limit > FD_SETSIZE; limiting max. # of open files to FD_SETSIZE
+httperf.parse_status_line: invalid status line `TTP/1.1 200 OK'!!
+httperf.parse_status_line: bad status 4214591
+httperf.parse_status_line: invalid status line `P'!!
+httperf.parse_status_line: bad status 4214591
+httperf.parse_status_line: invalid status line `H'!!
+httperf.parse_status_line: invalid status line `HTTP/1.'!!
+Maximum connect burst length: 1
+
+Total: connections 1000 requests 1000 replies 905 test-duration 8.291 s
+
+Connection rate: 120.6 conn/s (8.3 ms/conn, <=104 concurrent connections)
+Connection time [ms]: min 9.3 avg 115.8 max 2584.2 median 60.5 stddev 207.1
+Connection time [ms]: connect 48.3
+Connection length [replies/conn]: 1.000
+
+Request rate: 120.6 req/s (8.3 ms/req)
+Request size [B]: 79.0
+
+Reply rate [replies/s]: min 181.0 avg 181.0 max 181.0 stddev 0.0 (1 samples)
+Reply time [ms]: response 15.6 transfer 58.3
+Reply size [B]: header 194.0 content 42828.0 footer 0.0 (total 43022.0)
+Reply status: 1xx=0 2xx=901 3xx=0 4xx=0 5xx=4
+
+CPU time [s]: user 0.34 system 7.95 (user 4.1% system 95.9% total 100.0%)
+Net I/O: 4595.4 KB/s (37.6*10^6 bps)
+
+Errors: total 95 client-timo 48 socket-timo 0 connrefused 0 connreset 47
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+
+[静态页面，速率350]
+httperf --timeout=5 --client=0/1 --server=10.1.18.95 --port=8081 --uri=/Test/static.html --rate=350 --send-buffer=4096 --recv-buffer=16384 --num-conns=1000 --num-calls=1
+httperf: warning: open file limit > FD_SETSIZE; limiting max. # of open files to FD_SETSIZE
+httperf.parse_status_line: invalid status line `0 OK'!!
+httperf.get_line: truncating header from 1372 to 1024 bytes
+httperf.parse_status_line: invalid status line `0'!!
+httperf.get_line: truncating header from 1422 to 1024 bytes
+httperf.parse_status_line: invalid status line `O'!!
+httperf.parse_status_line: invalid status line `1'!!
+httperf.parse_status_line: bad status 4214591
+httperf.parse_status_line: invalid status line `OK'!!
+Maximum connect burst length: 1
+
+Total: connections 1000 requests 1000 replies 861 test-duration 7.875 s
+
+Connection rate: 127.0 conn/s (7.9 ms/conn, <=294 concurrent connections)
+Connection time [ms]: min 8.8 avg 316.4 max 1017.5 median 284.5 stddev 236.1
+Connection time [ms]: connect 39.2
+Connection length [replies/conn]: 1.000
+
+Request rate: 127.0 req/s (7.9 ms/req)
+Request size [B]: 79.0
+
+Reply rate [replies/s]: min 172.2 avg 172.2 max 172.2 stddev 0.0 (1 samples)
+Reply time [ms]: response 41.7 transfer 235.2
+Reply size [B]: header 294.0 content 42771.0 footer 0.0 (total 43065.0)
+Reply status: 1xx=0 2xx=858 3xx=0 4xx=0 5xx=3
+
+CPU time [s]: user 0.21 system 7.67 (user 2.6% system 97.4% total 100.0%)
+Net I/O: 4607.9 KB/s (37.7*10^6 bps)
+
+Errors: total 139 client-timo 137 socket-timo 0 connrefused 0 connreset 2
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+
+[静态页面，速率400]
+httperf --timeout=5 --client=0/1 --server=10.1.18.95 --port=8081 --uri=/Test/static.html --rate=400 --send-buffer=4096 --recv-buffer=16384 --num-conns=1000 --num-calls=1
+httperf: warning: open file limit > FD_SETSIZE; limiting max. # of open files to FD_SETSIZE
+httperf.parse_status_line: invalid status line `oy'!!
+httperf.parse_status_line: bad status 4214591
+httperf.parse_status_line: invalid status line `TTP'!!
+httperf.parse_status_line: bad status 4214591
+httperf.parse_status_line: invalid status line `TP/'!!
+httperf.parse_status_line: invalid status line `TP'!!
+httperf.parse_status_line: invalid status line `he'!!
+httperf.parse_status_line: bad status 4214591
+httperf.parse_status_line: invalid status line `HTTP/1.1 '!!
+httperf.parse_status_line: bad status 4214591
+httperf.parse_status_line: invalid status line `e'!!
+httperf.parse_status_line: invalid status line `Aa'!!
+httperf.parse_status_line: invalid status line `P'!!
+httperf.parse_status_line: bad status 4214591
+httperf.parse_status_line: invalid status line `HTTP/1.1'!!
+httperf.parse_status_line: bad status 4214591
+Maximum connect burst length: 1
+
+Total: connections 1000 requests 1000 replies 808 test-duration 7.598 s
+
+Connection rate: 131.6 conn/s (7.6 ms/conn, <=329 concurrent connections)
+Connection time [ms]: min 11.8 avg 431.6 max 1269.6 median 364.5 stddev 314.8
+Connection time [ms]: connect 52.5
+Connection length [replies/conn]: 1.000
+
+Request rate: 131.6 req/s (7.6 ms/req)
+Request size [B]: 79.0
+
+Reply rate [replies/s]: min 161.6 avg 161.6 max 161.6 stddev 0.0 (1 samples)
+Reply time [ms]: response 57.4 transfer 322.2
+Reply size [B]: header 193.0 content 42705.0 footer 0.0 (total 42898.0)
+Reply status: 1xx=0 2xx=802 3xx=0 4xx=0 5xx=6
+
+CPU time [s]: user 0.14 system 7.46 (user 1.8% system 98.2% total 100.0%)
+Net I/O: 4465.2 KB/s (36.6*10^6 bps)
+
+Errors: total 192 client-timo 107 socket-timo 0 connrefused 0 connreset 85
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+
+[静态页面，速率450]
+httperf --timeout=5 --client=0/1 --server=10.1.18.95 --port=8081 --uri=/Test/static.html --rate=450 --send-buffer=4096 --recv-buffer=16384 --num-conns=1000 --num-calls=1
+httperf: warning: open file limit > FD_SETSIZE; limiting max. # of open files to FD_SETSIZE
+httperf.parse_status_line: invalid status line `TP'!!
+httperf.parse_status_line: invalid status line `: Apo'!!
+httperf.parse_status_line: bad status 4214591
+httperf.parse_status_line: invalid status line `/1.1'!!
+httperf.parse_status_line: bad status 4214591
+httperf.parse_status_line: invalid status line `'!!
+httperf.parse_status_line: bad status 4214591
+Maximum connect burst length: 1
+
+Total: connections 1000 requests 1000 replies 804 test-duration 7.342 s
+
+Connection rate: 136.2 conn/s (7.3 ms/conn, <=527 concurrent connections)
+Connection time [ms]: min 9.9 avg 673.4 max 1598.2 median 652.5 stddev 425.9
+Connection time [ms]: connect 79.3
+Connection length [replies/conn]: 1.000
+
+Request rate: 136.2 req/s (7.3 ms/req)
+Request size [B]: 79.0
+
+Reply rate [replies/s]: min 160.8 avg 160.8 max 160.8 stddev 0.0 (1 samples)
+Reply time [ms]: response 85.3 transfer 508.7
+Reply size [B]: header 194.0 content 42917.0 footer 0.0 (total 43111.0)
+Reply status: 1xx=0 2xx=803 3xx=0 4xx=0 5xx=1
+
+CPU time [s]: user 0.11 system 7.23 (user 1.6% system 98.4% total 100.0%)
+Net I/O: 4620.9 KB/s (37.9*10^6 bps)
+
+Errors: total 196 client-timo 193 socket-timo 0 connrefused 0 connreset 3
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+
+[静态页面，速率500]
+httperf --timeout=5 --client=0/1 --server=10.1.18.95 --port=8081 --uri=/Test/static.html --rate=500 --send-buffer=4096 --recv-buffer=16384 --num-conns=1000 --num-calls=1
+httperf: warning: open file limit > FD_SETSIZE; limiting max. # of open files to FD_SETSIZE
+httperf.parse_status_line: invalid status line `2'!!
+httperf.parse_status_line: bad status 4214591
+httperf.parse_status_line: invalid status line `a'!!
+httperf.parse_status_line: invalid status line `T'!!
+Maximum connect burst length: 1
+
+Total: connections 1000 requests 1000 replies 787 test-duration 7.138 s
+
+Connection rate: 140.1 conn/s (7.1 ms/conn, <=591 concurrent connections)
+Connection time [ms]: min 6.8 avg 807.6 max 1536.6 median 893.5 stddev 415.3
+Connection time [ms]: connect 89.5
+Connection length [replies/conn]: 1.000
+
+Request rate: 140.1 req/s (7.1 ms/req)
+Request size [B]: 79.0
+
+Reply rate [replies/s]: min 157.4 avg 157.4 max 157.4 stddev 0.0 (1 samples)
+Reply time [ms]: response 98.1 transfer 619.3
+Reply size [B]: header 194.0 content 42807.0 footer 0.0 (total 43001.0)
+Reply status: 1xx=0 2xx=784 3xx=0 4xx=0 5xx=3
+
+CPU time [s]: user 0.11 system 7.03 (user 1.6% system 98.4% total 100.0%)
+Net I/O: 4640.7 KB/s (38.0*10^6 bps)
+
+Errors: total 213 client-timo 197 socket-timo 0 connrefused 0 connreset 16
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+[动态页面，速率500]
+httperf --timeout=5 --client=0/1 --server=10.1.18.95 --port=8081 --uri=/Test/static.html --rate=500 --send-buffer=4096 --recv-buffer=16384 --num-conns=1000 --num-calls=1
+httperf: warning: open file limit > FD_SETSIZE; limiting max. # of open files to FD_SETSIZE
+httperf.parse_status_line: invalid status line `T'!!
+httperf.parse_status_line: bad status 0
+httperf.get_line: truncating header from 1446 to 1024 bytes
+httperf.parse_status_line: invalid status line `T'!!
+httperf.parse_status_line: bad status 4214591
+httperf.parse_status_line: invalid status line `.'!!
+httperf.parse_status_line: invalid status line `TTP/'!!
+httperf.parse_status_line: bad status 4214591
+httperf.parse_status_line: invalid status line `'!!
+httperf.get_line: truncating header from 1389 to 1024 bytes
+httperf.parse_status_line: invalid status line `/'!!
+httperf.parse_status_line: bad status 1625298624
+httperf.get_line: truncating header from 1422 to 1024 bytes
+httperf.parse_status_line: invalid status line `'!!
+httperf.parse_status_line: bad status 1625298624
+httperf.get_line: truncating header from 1400 to 1024 bytes
+httperf.parse_status_line: invalid status line `T'!!
+httperf.parse_status_line: bad status 1625298624
+httperf.parse_status_line: invalid status line `/ '!!
+Maximum connect burst length: 1
+
+Total: connections 1000 requests 1000 replies 794 test-duration 7.088 s
+
+Connection rate: 141.1 conn/s (7.1 ms/conn, <=554 concurrent connections)
+Connection time [ms]: min 13.8 avg 831.1 max 2224.8 median 905.5 stddev 455.9
+Connection time [ms]: connect 97.6
+Connection length [replies/conn]: 1.000
+
+Request rate: 141.1 req/s (7.1 ms/req)
+Request size [B]: 79.0
+
+Reply rate [replies/s]: min 158.8 avg 158.8 max 158.8 stddev 0.0 (1 samples)
+Reply time [ms]: response 104.3 transfer 627.8
+Reply size [B]: header 410.0 content 42646.0 footer 0.0 (total 43056.0)
+Reply status: 1xx=0 2xx=788 3xx=0 4xx=0 5xx=6
+
+CPU time [s]: user 0.18 system 6.91 (user 2.6% system 97.4% total 100.0%)
+Net I/O: 4721.0 KB/s (38.7*10^6 bps)
+
+Errors: total 206 client-timo 54 socket-timo 0 connrefused 0 connreset 152
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+
+[动态页面，速率450]
+httperf --timeout=5 --client=0/1 --server=10.1.18.95 --port=8081 --uri=/Test/static.html --rate=450 --send-buffer=4096 --recv-buffer=16384 --num-conns=1000 --num-calls=1
+httperf: warning: open file limit > FD_SETSIZE; limiting max. # of open files to FD_SETSIZE
+httperf.parse_status_line: invalid status line `0'!!
+httperf.parse_status_line: invalid status line `1'!!
+httperf.parse_status_line: invalid status line `2'!!
+httperf.parse_status_line: bad status 4214591
+httperf.get_line: truncating header from 1446 to 1024 bytes
+httperf.parse_status_line: invalid status line `r:'!!
+httperf.parse_status_line: bad status 4214591
+Maximum connect burst length: 1
+
+Total: connections 1000 requests 1000 replies 832 test-duration 7.372 s
+
+Connection rate: 135.6 conn/s (7.4 ms/conn, <=528 concurrent connections)
+Connection time [ms]: min 7.3 avg 755.1 max 1726.0 median 772.5 stddev 424.4
+Connection time [ms]: connect 88.1
+Connection length [replies/conn]: 1.000
+
+Request rate: 135.6 req/s (7.4 ms/req)
+Request size [B]: 79.0
+
+Reply rate [replies/s]: min 166.4 avg 166.4 max 166.4 stddev 0.0 (1 samples)
+Reply time [ms]: response 95.9 transfer 570.1
+Reply size [B]: header 246.0 content 42816.0 footer 0.0 (total 43062.0)
+Reply status: 1xx=0 2xx=829 3xx=0 4xx=0 5xx=3
+
+CPU time [s]: user 0.12 system 7.25 (user 1.7% system 98.3% total 100.0%)
+Net I/O: 4756.4 KB/s (39.0*10^6 bps)
+
+Errors: total 168 client-timo 167 socket-timo 0 connrefused 0 connreset 1
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+
+[动态页面，速率400]
+httperf --timeout=5 --client=0/1 --server=10.1.18.95 --port=8081 --uri=/Test/static.html --rate=400 --send-buffer=4096 --recv-buffer=16384 --num-conns=1000 --num-calls=1
+httperf: warning: open file limit > FD_SETSIZE; limiting max. # of open files to FD_SETSIZE
+httperf.parse_status_line: invalid status line `T'!!
+httperf.parse_status_line: invalid status line `r'!!
+httperf.parse_status_line: bad status 4214591
+Maximum connect burst length: 1
+
+Total: connections 1000 requests 1000 replies 849 test-duration 7.586 s
+
+Connection rate: 131.8 conn/s (7.6 ms/conn, <=431 concurrent connections)
+Connection time [ms]: min 6.9 avg 572.8 max 1489.7 median 543.5 stddev 357.1
+Connection time [ms]: connect 68.8
+Connection length [replies/conn]: 1.000
+
+Request rate: 131.8 req/s (7.6 ms/req)
+Request size [B]: 79.0
+
+Reply rate [replies/s]: min 169.8 avg 169.8 max 169.8 stddev 0.0 (1 samples)
+Reply time [ms]: response 74.0 transfer 429.7
+Reply size [B]: header 194.0 content 42920.0 footer 0.0 (total 43114.0)
+Reply status: 1xx=0 2xx=848 3xx=0 4xx=0 5xx=1
+
+CPU time [s]: user 0.14 system 7.45 (user 1.8% system 98.2% total 100.0%)
+Net I/O: 4722.3 KB/s (38.7*10^6 bps)
+
+Errors: total 151 client-timo 150 socket-timo 0 connrefused 0 connreset 1
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+
+[动态页面，速率350]
+httperf --timeout=5 --client=0/1 --server=10.1.18.95 --port=8081 --uri=/Test/static.html --rate=350 --send-buffer=4096 --recv-buffer=16384 --num-conns=1000 --num-calls=1
+httperf: warning: open file limit > FD_SETSIZE; limiting max. # of open files to FD_SETSIZE
+httperf.parse_status_line: invalid status line `TP'!!
+httperf.parse_status_line: invalid status line `TTP/1.1 200 OK'!!
+httperf.parse_status_line: invalid status line `T'!!
+httperf.parse_status_line: invalid status line `e'!!
+httperf.parse_status_line: bad status 4214591
+Maximum connect burst length: 1
+
+Total: connections 1000 requests 1000 replies 804 test-duration 10.724 s
+
+Connection rate: 93.2 conn/s (10.7 ms/conn, <=571 concurrent connections)
+Connection time [ms]: min 6.9 avg 1390.8 max 4056.2 median 274.5 stddev 1423.6
+Connection time [ms]: connect 1185.6
+Connection length [replies/conn]: 1.000
+
+Request rate: 93.2 req/s (10.7 ms/req)
+Request size [B]: 79.0
+
+Reply rate [replies/s]: min 45.2 avg 80.4 max 115.6 stddev 49.8 (2 samples)
+Reply time [ms]: response 73.5 transfer 87.1
+Reply size [B]: header 194.0 content 42917.0 footer 0.0 (total 43111.0)
+Reply status: 1xx=0 2xx=801 3xx=0 4xx=0 5xx=3
+
+CPU time [s]: user 0.20 system 10.53 (user 1.8% system 98.2% total 100.0%)
+Net I/O: 3163.7 KB/s (25.9*10^6 bps)
+
+Errors: total 196 client-timo 102 socket-timo 0 connrefused 0 connreset 94
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+
+[动态页面，速率300]
+httperf --timeout=5 --client=0/1 --server=10.1.18.95 --port=8081 --uri=/Test/static.html --rate=300 --send-buffer=4096 --recv-buffer=16384 --num-conns=1000 --num-calls=1
+httperf: warning: open file limit > FD_SETSIZE; limiting max. # of open files to FD_SETSIZE
+Maximum connect burst length: 1
+
+Total: connections 1000 requests 63 replies 0 test-duration 10.780 s
+
+Connection rate: 92.8 conn/s (10.8 ms/conn, <=1000 concurrent connections)
+Connection time [ms]: min 0.0 avg 0.0 max 0.0 median 0.0 stddev 0.0
+Connection time [ms]: connect 254.8
+Connection length [replies/conn]: 0.000
+
+Request rate: 5.8 req/s (171.1 ms/req)
+Request size [B]: 79.0
+
+Reply rate [replies/s]: min 0.0 avg 0.0 max 0.0 stddev 0.0 (2 samples)
+Reply time [ms]: response 0.0 transfer 0.0
+Reply size [B]: header 0.0 content 0.0 footer 0.0 (total 0.0)
+Reply status: 1xx=0 2xx=0 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 0.45 system 10.33 (user 4.1% system 95.9% total 100.0%)
+Net I/O: 0.5 KB/s (0.0*10^6 bps)
+
+Errors: total 1000 client-timo 1000 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+
+[动态页面，速率250]
+httperf --timeout=5 --client=0/1 --server=10.1.18.95 --port=8081 --uri=/Test/static.html --rate=250 --send-buffer=4096 --recv-buffer=16384 --num-conns=1000 --num-calls=1
+httperf: warning: open file limit > FD_SETSIZE; limiting max. # of open files to FD_SETSIZE
+Maximum connect burst length: 1
+
+Total: connections 1000 requests 12 replies 0 test-duration 11.596 s
+
+Connection rate: 86.2 conn/s (11.6 ms/conn, <=1000 concurrent connections)
+Connection time [ms]: min 0.0 avg 0.0 max 0.0 median 0.0 stddev 0.0
+Connection time [ms]: connect 1670.4
+Connection length [replies/conn]: 0.000
+
+Request rate: 1.0 req/s (966.3 ms/req)
+Request size [B]: 79.0
+
+Reply rate [replies/s]: min 0.0 avg 0.0 max 0.0 stddev 0.0 (2 samples)
+Reply time [ms]: response 0.0 transfer 0.0
+Reply size [B]: header 0.0 content 0.0 footer 0.0 (total 0.0)
+Reply status: 1xx=0 2xx=0 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 0.40 system 11.20 (user 3.4% system 96.6% total 100.0%)
+Net I/O: 0.1 KB/s (0.0*10^6 bps)
+
+Errors: total 1000 client-timo 1000 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+
+[动态页面，速率200]
+httperf --timeout=5 --client=0/1 --server=10.1.18.95 --port=8081 --uri=/Test/static.html --rate=200 --send-buffer=4096 --recv-buffer=16384 --num-conns=1000 --num-calls=1
+httperf: warning: open file limit > FD_SETSIZE; limiting max. # of open files to FD_SETSIZE
+Maximum connect burst length: 1
+
+Total: connections 1000 requests 13 replies 0 test-duration 12.808 s
+
+Connection rate: 78.1 conn/s (12.8 ms/conn, <=1000 concurrent connections)
+Connection time [ms]: min 0.0 avg 0.0 max 0.0 median 0.0 stddev 0.0
+Connection time [ms]: connect 1157.0
+Connection length [replies/conn]: 0.000
+
+Request rate: 1.0 req/s (985.2 ms/req)
+Request size [B]: 79.0
+
+Reply rate [replies/s]: min 0.0 avg 0.0 max 0.0 stddev 0.0 (2 samples)
+Reply time [ms]: response 0.0 transfer 0.0
+Reply size [B]: header 0.0 content 0.0 footer 0.0 (total 0.0)
+Reply status: 1xx=0 2xx=0 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 0.47 system 12.34 (user 3.7% system 96.3% total 100.0%)
+Net I/O: 0.1 KB/s (0.0*10^6 bps)
+
+Errors: total 1000 client-timo 1000 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+
+[动态页面，速率150]
+httperf --timeout=5 --client=0/1 --server=10.1.18.95 --port=8081 --uri=/Test/static.html --rate=150 --send-buffer=4096 --recv-buffer=16384 --num-conns=1000 --num-calls=1
+httperf: warning: open file limit > FD_SETSIZE; limiting max. # of open files to FD_SETSIZE
+Maximum connect burst length: 1
+
+Total: connections 1000 requests 17 replies 0 test-duration 14.626 s
+
+Connection rate: 68.4 conn/s (14.6 ms/conn, <=752 concurrent connections)
+Connection time [ms]: min 0.0 avg 0.0 max 0.0 median 0.0 stddev 0.0
+Connection time [ms]: connect 1650.0
+Connection length [replies/conn]: 0.000
+
+Request rate: 1.2 req/s (860.3 ms/req)
+Request size [B]: 79.0
+
+Reply rate [replies/s]: min 0.0 avg 0.0 max 0.0 stddev 0.0 (2 samples)
+Reply time [ms]: response 0.0 transfer 0.0
+Reply size [B]: header 0.0 content 0.0 footer 0.0 (total 0.0)
+Reply status: 1xx=0 2xx=0 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 0.52 system 14.11 (user 3.6% system 96.4% total 100.0%)
+Net I/O: 0.1 KB/s (0.0*10^6 bps)
+
+Errors: total 1000 client-timo 1000 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+
+[动态页面，速率100]
+httperf --timeout=5 --client=0/1 --server=10.1.18.95 --port=8081 --uri=/Test/static.html --rate=100 --send-buffer=4096 --recv-buffer=16384 --num-conns=1000 --num-calls=1
+httperf: warning: open file limit > FD_SETSIZE; limiting max. # of open files to FD_SETSIZE
+httperf.parse_status_line: invalid status line `TTP/1.1 200 OK'!!
+httperf.parse_status_line: invalid status line `TTP/1.1 200 OK'!!
+httperf.parse_status_line: invalid status line `TTP/1.1 200 OK'!!
+httperf.parse_status_line: bad status 3384702656
+httperf.parse_status_line: invalid status line `TTP/1.1 200 OK'!!
+httperf.parse_status_line: invalid status line `TP'!!
+httperf.parse_status_line: invalid status line `TP/1.1 200 OK'!!
+httperf.parse_status_line: invalid status line `T'!!
+httperf.parse_status_line: invalid status line `TTP/1.1 200 OK'!!
+httperf.parse_status_line: invalid status line `S'!!
+httperf.parse_status_line: invalid status line `TTP/1.1 200 OK'!!
+httperf.parse_status_line: bad status 4214591
+Maximum connect burst length: 1
+
+Total: connections 1000 requests 258 replies 86 test-duration 17.324 s
+
+Connection rate: 57.7 conn/s (17.3 ms/conn, <=504 concurrent connections)
+Connection time [ms]: min 24.7 avg 2081.7 max 5516.1 median 1697.5 stddev 1548.3
+Connection time [ms]: connect 1005.9
+Connection length [replies/conn]: 1.000
+
+Request rate: 14.9 req/s (67.1 ms/req)
+Request size [B]: 79.0
+
+Reply rate [replies/s]: min 0.0 avg 5.7 max 17.2 stddev 9.9 (3 samples)
+Reply time [ms]: response 547.6 transfer 59.6
+Reply size [B]: header 192.0 content 42471.0 footer 0.0 (total 42663.0)
+Reply status: 1xx=0 2xx=77 3xx=0 4xx=0 5xx=9
+
+CPU time [s]: user 0.49 system 16.84 (user 2.8% system 97.2% total 100.0%)
+Net I/O: 208.0 KB/s (1.7*10^6 bps)
+
+Errors: total 914 client-timo 902 socket-timo 0 connrefused 0 connreset 12
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+
+[动态页面，速率50]
+httperf --timeout=5 --client=0/1 --server=10.1.18.95 --port=8081 --uri=/Test/static.html --rate=50 --send-buffer=4096 --recv-buffer=16384 --num-conns=1000 --num-calls=1
+httperf: warning: open file limit > FD_SETSIZE; limiting max. # of open files to FD_SETSIZE
+httperf.parse_status_line: invalid status line `1 '!!
+httperf.parse_status_line: bad status 0
+httperf.parse_status_line: invalid status line `TTP/1.1 200 OK'!!
+httperf.parse_status_line: invalid status line `TTP/1.1 200 OK'!!
+Maximum connect burst length: 1
+
+Total: connections 1000 requests 177 replies 28 test-duration 27.848 s
+
+Connection rate: 35.9 conn/s (27.8 ms/conn, <=286 concurrent connections)
+Connection time [ms]: min 9.2 avg 2060.6 max 4682.3 median 2043.5 stddev 1554.7
+Connection time [ms]: connect 1121.5
+Connection length [replies/conn]: 1.000
+
+Request rate: 6.4 req/s (157.3 ms/req)
+Request size [B]: 79.0
+
+Reply rate [replies/s]: min 0.0 avg 1.1 max 5.6 stddev 2.5 (5 samples)
+Reply time [ms]: response 418.8 transfer 29.2
+Reply size [B]: header 193.0 content 42971.0 footer 0.0 (total 43164.0)
+Reply status: 1xx=0 2xx=25 3xx=0 4xx=0 5xx=3
+
+CPU time [s]: user 0.85 system 27.00 (user 3.0% system 97.0% total 100.0%)
+Net I/O: 42.9 KB/s (0.4*10^6 bps)
+
+Errors: total 972 client-timo 972 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0

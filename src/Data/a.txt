@@ -1,0 +1,500 @@
+2017年 05月 14日 星期日 16:23:07 CST
+httperf --timeout=5 --client=0/1 --server=192.168.1.254 --port=8081 --uri=/Test/static.html --rate=50 --send-buffer=4096 --recv-buffer=16384 --num-conns=1000 --num-calls=1
+Maximum connect burst length: 1
+
+Total: connections 1000 requests 1000 replies 977 test-duration 23.063 s
+
+Connection rate: 43.4 conn/s (23.1 ms/conn, <=40 concurrent connections)
+Connection time [ms]: min 11.4 avg 69.1 max 1005.6 median 15.5 stddev 162.3
+Connection time [ms]: connect 2.6
+Connection length [replies/conn]: 1.000
+
+Request rate: 43.4 req/s (23.1 ms/req)
+Request size [B]: 82.0
+
+Reply rate [replies/s]: min 48.2 avg 48.9 max 49.6 stddev 0.6 (4 samples)
+Reply time [ms]: response 59.1 transfer 7.4
+Reply size [B]: header 198.0 content 42971.0 footer 0.0 (total 43169.0)
+Reply status: 1xx=0 2xx=977 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 4.48 system 18.56 (user 19.4% system 80.5% total 99.9%)
+Net I/O: 1789.4 KB/s (14.7*10^6 bps)
+
+Errors: total 23 client-timo 14 socket-timo 0 connrefused 0 connreset 9
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+2017年 05月 14日 星期日 16:23:30 CST
+2017年 05月 14日 星期日 16:23:35 CST
+httperf --timeout=5 --client=0/1 --server=192.168.1.254 --port=8081 --uri=/Test/static.html --rate=100 --send-buffer=4096 --recv-buffer=16384 --num-conns=1000 --num-calls=1
+Maximum connect burst length: 1
+
+Total: connections 1000 requests 1000 replies 961 test-duration 10.004 s
+
+Connection rate: 100.0 conn/s (10.0 ms/conn, <=5 concurrent connections)
+Connection time [ms]: min 10.6 avg 15.1 max 48.4 median 14.5 stddev 3.9
+Connection time [ms]: connect 2.2
+Connection length [replies/conn]: 1.000
+
+Request rate: 100.0 req/s (10.0 ms/req)
+Request size [B]: 82.0
+
+Reply rate [replies/s]: min 95.4 avg 96.0 max 96.6 stddev 0.9 (2 samples)
+Reply time [ms]: response 9.3 transfer 3.6
+Reply size [B]: header 200.0 content 42971.0 footer 0.0 (total 43171.0)
+Reply status: 1xx=0 2xx=961 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 2.17 system 7.82 (user 21.7% system 78.1% total 99.8%)
+Net I/O: 4057.8 KB/s (33.2*10^6 bps)
+
+Errors: total 39 client-timo 0 socket-timo 0 connrefused 0 connreset 39
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+2017年 05月 14日 星期日 16:23:45 CST
+2017年 05月 14日 星期日 16:23:50 CST
+httperf --timeout=5 --client=0/1 --server=192.168.1.254 --port=8081 --uri=/Test/static.html --rate=150 --send-buffer=4096 --recv-buffer=16384 --num-conns=1000 --num-calls=1
+Maximum connect burst length: 1
+
+Total: connections 1000 requests 1000 replies 721 test-duration 11.644 s
+
+Connection rate: 85.9 conn/s (11.6 ms/conn, <=118 concurrent connections)
+Connection time [ms]: min 11.5 avg 144.7 max 1457.3 median 17.5 stddev 277.2
+Connection time [ms]: connect 3.6
+Connection length [replies/conn]: 1.000
+
+Request rate: 85.9 req/s (11.6 ms/req)
+Request size [B]: 82.0
+
+Reply rate [replies/s]: min 35.6 avg 72.1 max 108.6 stddev 51.6 (2 samples)
+Reply time [ms]: response 110.4 transfer 31.4
+Reply size [B]: header 263.0 content 42911.0 footer 0.0 (total 43174.0)
+Reply status: 1xx=0 2xx=720 3xx=0 4xx=0 5xx=1
+
+CPU time [s]: user 1.16 system 10.44 (user 9.9% system 89.7% total 99.6%)
+Net I/O: 2617.7 KB/s (21.4*10^6 bps)
+
+Errors: total 279 client-timo 21 socket-timo 0 connrefused 0 connreset 258
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+2017年 05月 14日 星期日 16:24:02 CST
+2017年 05月 14日 星期日 16:24:07 CST
+httperf --timeout=5 --client=0/1 --server=192.168.1.254 --port=8081 --uri=/Test/static.html --rate=200 --send-buffer=4096 --recv-buffer=16384 --num-conns=1000 --num-calls=1
+Maximum connect burst length: 1
+
+Total: connections 1000 requests 1000 replies 521 test-duration 9.999 s
+
+Connection rate: 100.0 conn/s (10.0 ms/conn, <=25 concurrent connections)
+Connection time [ms]: min 13.5 avg 22.4 max 64.0 median 20.5 stddev 7.4
+Connection time [ms]: connect 2.7
+Connection length [replies/conn]: 1.000
+
+Request rate: 100.0 req/s (10.0 ms/req)
+Request size [B]: 82.0
+
+Reply rate [replies/s]: min 104.0 avg 104.0 max 104.0 stddev 0.0 (1 samples)
+Reply time [ms]: response 14.9 transfer 4.7
+Reply size [B]: header 203.0 content 42971.0 footer 0.0 (total 43174.0)
+Reply status: 1xx=0 2xx=520 3xx=0 4xx=0 5xx=1
+
+CPU time [s]: user 1.12 system 8.87 (user 11.2% system 88.7% total 99.9%)
+Net I/O: 2204.9 KB/s (18.1*10^6 bps)
+
+Errors: total 479 client-timo 9 socket-timo 0 connrefused 0 connreset 470
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+2017年 05月 14日 星期日 16:24:17 CST
+2017年 05月 14日 星期日 16:24:22 CST
+httperf --timeout=5 --client=0/1 --server=192.168.1.254 --port=8081 --uri=/Test/static.html --rate=250 --send-buffer=4096 --recv-buffer=16384 --num-conns=1000 --num-calls=1
+Maximum connect burst length: 2
+
+Total: connections 1000 requests 1000 replies 490 test-duration 8.676 s
+
+Connection rate: 115.3 conn/s (8.7 ms/conn, <=27 concurrent connections)
+Connection time [ms]: min 14.3 avg 27.8 max 83.2 median 26.5 stddev 8.6
+Connection time [ms]: connect 3.0
+Connection length [replies/conn]: 1.000
+
+Request rate: 115.3 req/s (8.7 ms/req)
+Request size [B]: 82.0
+
+Reply rate [replies/s]: min 98.0 avg 98.0 max 98.0 stddev 0.0 (1 samples)
+Reply time [ms]: response 18.8 transfer 5.8
+Reply size [B]: header 204.0 content 42971.0 footer 0.0 (total 43175.0)
+Reply status: 1xx=0 2xx=487 3xx=0 4xx=0 5xx=3
+
+CPU time [s]: user 1.20 system 7.43 (user 13.9% system 85.7% total 99.5%)
+Net I/O: 2390.5 KB/s (19.6*10^6 bps)
+
+Errors: total 510 client-timo 4 socket-timo 0 connrefused 0 connreset 506
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+2017年 05月 14日 星期日 16:24:31 CST
+2017年 05月 14日 星期日 16:24:36 CST
+httperf --timeout=5 --client=0/1 --server=192.168.1.254 --port=8081 --uri=/Test/static.html --rate=300 --send-buffer=4096 --recv-buffer=16384 --num-conns=1000 --num-calls=1
+Maximum connect burst length: 4
+
+Total: connections 1000 requests 1000 replies 543 test-duration 8.564 s
+
+Connection rate: 116.8 conn/s (8.6 ms/conn, <=260 concurrent connections)
+Connection time [ms]: min 21.1 avg 578.2 max 3403.7 median 117.5 stddev 1070.3
+Connection time [ms]: connect 350.1
+Connection length [replies/conn]: 1.000
+
+Request rate: 116.8 req/s (8.6 ms/req)
+Request size [B]: 82.0
+
+Reply rate [replies/s]: min 108.6 avg 108.6 max 108.6 stddev 0.0 (1 samples)
+Reply time [ms]: response 137.9 transfer 37.0
+Reply size [B]: header 205.0 content 42891.0 footer 0.0 (total 43096.0)
+Reply status: 1xx=0 2xx=538 3xx=0 4xx=0 5xx=5
+
+CPU time [s]: user 0.41 system 8.11 (user 4.8% system 94.7% total 99.5%)
+Net I/O: 2677.9 KB/s (21.9*10^6 bps)
+
+Errors: total 457 client-timo 47 socket-timo 0 connrefused 0 connreset 410
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+2017年 05月 14日 星期日 16:24:44 CST
+2017年 05月 14日 星期日 16:24:49 CST
+httperf --timeout=5 --client=0/1 --server=192.168.1.254 --port=8081 --uri=/Test/static.html --rate=350 --send-buffer=4096 --recv-buffer=16384 --num-conns=1000 --num-calls=1
+Maximum connect burst length: 2
+
+Total: connections 1000 requests 877 replies 573 test-duration 8.398 s
+
+Connection rate: 119.1 conn/s (8.4 ms/conn, <=513 concurrent connections)
+Connection time [ms]: min 82.3 avg 1074.4 max 6256.1 median 368.5 stddev 1284.9
+Connection time [ms]: connect 721.9
+Connection length [replies/conn]: 1.000
+
+Request rate: 104.4 req/s (9.6 ms/req)
+Request size [B]: 82.0
+
+Reply rate [replies/s]: min 104.4 avg 104.4 max 104.4 stddev 0.0 (1 samples)
+Reply time [ms]: response 320.7 transfer 22.6
+Reply size [B]: header 428.0 content 42521.0 footer 0.0 (total 42949.0)
+Reply status: 1xx=0 2xx=549 3xx=0 4xx=0 5xx=24
+
+CPU time [s]: user 0.17 system 8.18 (user 2.0% system 97.4% total 99.5%)
+Net I/O: 2870.2 KB/s (23.5*10^6 bps)
+
+Errors: total 427 client-timo 140 socket-timo 0 connrefused 0 connreset 287
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+2017年 05月 14日 星期日 16:24:58 CST
+2017年 05月 14日 星期日 16:25:03 CST
+httperf --timeout=5 --client=0/1 --server=192.168.1.254 --port=8081 --uri=/Test/static.html --rate=400 --send-buffer=4096 --recv-buffer=16384 --num-conns=1000 --num-calls=1
+Maximum connect burst length: 1
+
+Total: connections 1000 requests 64 replies 0 test-duration 10.142 s
+
+Connection rate: 98.6 conn/s (10.1 ms/conn, <=1000 concurrent connections)
+Connection time [ms]: min 0.0 avg 0.0 max 0.0 median 0.0 stddev 0.0
+Connection time [ms]: connect 283.1
+Connection length [replies/conn]: 0.000
+
+Request rate: 6.3 req/s (158.5 ms/req)
+Request size [B]: 82.0
+
+Reply rate [replies/s]: min 0.0 avg 0.0 max 0.0 stddev 0.0 (2 samples)
+Reply time [ms]: response 0.0 transfer 0.0
+Reply size [B]: header 0.0 content 0.0 footer 0.0 (total 0.0)
+Reply status: 1xx=0 2xx=0 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 0.34 system 9.80 (user 3.4% system 96.6% total 99.9%)
+Net I/O: 0.5 KB/s (0.0*10^6 bps)
+
+Errors: total 1000 client-timo 1000 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+2017年 05月 14日 星期日 16:25:13 CST
+2017年 05月 14日 星期日 16:25:18 CST
+httperf --timeout=5 --client=0/1 --server=192.168.1.254 --port=8081 --uri=/Test/static.html --rate=450 --send-buffer=4096 --recv-buffer=16384 --num-conns=1000 --num-calls=1
+Maximum connect burst length: 1
+
+Total: connections 1000 requests 12 replies 0 test-duration 10.011 s
+
+Connection rate: 99.9 conn/s (10.0 ms/conn, <=1000 concurrent connections)
+Connection time [ms]: min 0.0 avg 0.0 max 0.0 median 0.0 stddev 0.0
+Connection time [ms]: connect 1502.2
+Connection length [replies/conn]: 0.000
+
+Request rate: 1.2 req/s (834.3 ms/req)
+Request size [B]: 82.0
+
+Reply rate [replies/s]: min 0.0 avg 0.0 max 0.0 stddev 0.0 (2 samples)
+Reply time [ms]: response 0.0 transfer 0.0
+Reply size [B]: header 0.0 content 0.0 footer 0.0 (total 0.0)
+Reply status: 1xx=0 2xx=0 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 0.42 system 9.58 (user 4.2% system 95.7% total 100.0%)
+Net I/O: 0.1 KB/s (0.0*10^6 bps)
+
+Errors: total 1000 client-timo 1000 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+2017年 05月 14日 星期日 16:25:28 CST
+2017年 05月 14日 星期日 16:25:33 CST
+httperf --timeout=5 --client=0/1 --server=192.168.1.254 --port=8081 --uri=/Test/static.html --rate=500 --send-buffer=4096 --recv-buffer=16384 --num-conns=1000 --num-calls=1
+Maximum connect burst length: 1
+
+Total: connections 1000 requests 10 replies 0 test-duration 9.008 s
+
+Connection rate: 111.0 conn/s (9.0 ms/conn, <=1000 concurrent connections)
+Connection time [ms]: min 0.0 avg 0.0 max 0.0 median 0.0 stddev 0.0
+Connection time [ms]: connect 1201.8
+Connection length [replies/conn]: 0.000
+
+Request rate: 1.1 req/s (900.8 ms/req)
+Request size [B]: 82.0
+
+Reply rate [replies/s]: min 0.0 avg 0.0 max 0.0 stddev 0.0 (1 samples)
+Reply time [ms]: response 0.0 transfer 0.0
+Reply size [B]: header 0.0 content 0.0 footer 0.0 (total 0.0)
+Reply status: 1xx=0 2xx=0 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 0.37 system 8.63 (user 4.1% system 95.8% total 99.9%)
+Net I/O: 0.1 KB/s (0.0*10^6 bps)
+
+Errors: total 1000 client-timo 1000 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+2017年 05月 14日 星期日 16:25:42 CST
+2017年 05月 14日 星期日 16:25:47 CST
+httperf --timeout=5 --client=0/1 --server=192.168.1.254 --port=8081 --uri=/Test/dynamic.jsp --rate=500 --send-buffer=4096 --recv-buffer=16384 --num-conns=1000 --num-calls=1
+Maximum connect burst length: 1
+
+Total: connections 1000 requests 8 replies 0 test-duration 9.008 s
+
+Connection rate: 111.0 conn/s (9.0 ms/conn, <=1000 concurrent connections)
+Connection time [ms]: min 0.0 avg 0.0 max 0.0 median 0.0 stddev 0.0
+Connection time [ms]: connect 1501.9
+Connection length [replies/conn]: 0.000
+
+Request rate: 0.9 req/s (1126.0 ms/req)
+Request size [B]: 82.0
+
+Reply rate [replies/s]: min 0.0 avg 0.0 max 0.0 stddev 0.0 (1 samples)
+Reply time [ms]: response 0.0 transfer 0.0
+Reply size [B]: header 0.0 content 0.0 footer 0.0 (total 0.0)
+Reply status: 1xx=0 2xx=0 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 0.38 system 8.62 (user 4.2% system 95.7% total 99.9%)
+Net I/O: 0.1 KB/s (0.0*10^6 bps)
+
+Errors: total 1000 client-timo 1000 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+2017年 05月 14日 星期日 16:25:56 CST
+2017年 05月 14日 星期日 16:26:01 CST
+httperf --timeout=5 --client=0/1 --server=192.168.1.254 --port=8081 --uri=/Test/dynamic.jsp --rate=450 --send-buffer=4096 --recv-buffer=16384 --num-conns=1000 --num-calls=1
+Maximum connect burst length: 1
+
+Total: connections 1000 requests 12 replies 0 test-duration 10.008 s
+
+Connection rate: 99.9 conn/s (10.0 ms/conn, <=1000 concurrent connections)
+Connection time [ms]: min 0.0 avg 0.0 max 0.0 median 0.0 stddev 0.0
+Connection time [ms]: connect 1501.5
+Connection length [replies/conn]: 0.000
+
+Request rate: 1.2 req/s (834.0 ms/req)
+Request size [B]: 82.0
+
+Reply rate [replies/s]: min 0.0 avg 0.0 max 0.0 stddev 0.0 (2 samples)
+Reply time [ms]: response 0.0 transfer 0.0
+Reply size [B]: header 0.0 content 0.0 footer 0.0 (total 0.0)
+Reply status: 1xx=0 2xx=0 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 0.37 system 9.63 (user 3.7% system 96.2% total 99.9%)
+Net I/O: 0.1 KB/s (0.0*10^6 bps)
+
+Errors: total 1000 client-timo 1000 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+2017年 05月 14日 星期日 16:26:11 CST
+2017年 05月 14日 星期日 16:26:16 CST
+httperf --timeout=5 --client=0/1 --server=192.168.1.254 --port=8081 --uri=/Test/dynamic.jsp --rate=400 --send-buffer=4096 --recv-buffer=16384 --num-conns=1000 --num-calls=1
+Maximum connect burst length: 1
+
+Total: connections 1000 requests 12 replies 0 test-duration 10.012 s
+
+Connection rate: 99.9 conn/s (10.0 ms/conn, <=1000 concurrent connections)
+Connection time [ms]: min 0.0 avg 0.0 max 0.0 median 0.0 stddev 0.0
+Connection time [ms]: connect 1501.7
+Connection length [replies/conn]: 0.000
+
+Request rate: 1.2 req/s (834.3 ms/req)
+Request size [B]: 82.0
+
+Reply rate [replies/s]: min 0.0 avg 0.0 max 0.0 stddev 0.0 (2 samples)
+Reply time [ms]: response 0.0 transfer 0.0
+Reply size [B]: header 0.0 content 0.0 footer 0.0 (total 0.0)
+Reply status: 1xx=0 2xx=0 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 0.29 system 9.58 (user 2.9% system 95.6% total 98.5%)
+Net I/O: 0.1 KB/s (0.0*10^6 bps)
+
+Errors: total 1000 client-timo 1000 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+2017年 05月 14日 星期日 16:26:26 CST
+2017年 05月 14日 星期日 16:26:31 CST
+httperf --timeout=5 --client=0/1 --server=192.168.1.254 --port=8081 --uri=/Test/dynamic.jsp --rate=350 --send-buffer=4096 --recv-buffer=16384 --num-conns=1000 --num-calls=1
+Maximum connect burst length: 1
+
+Total: connections 1000 requests 18 replies 0 test-duration 10.028 s
+
+Connection rate: 99.7 conn/s (10.0 ms/conn, <=1000 concurrent connections)
+Connection time [ms]: min 0.0 avg 0.0 max 0.0 median 0.0 stddev 0.0
+Connection time [ms]: connect 1001.9
+Connection length [replies/conn]: 0.000
+
+Request rate: 1.8 req/s (557.1 ms/req)
+Request size [B]: 82.0
+
+Reply rate [replies/s]: min 0.0 avg 0.0 max 0.0 stddev 0.0 (2 samples)
+Reply time [ms]: response 0.0 transfer 0.0
+Reply size [B]: header 0.0 content 0.0 footer 0.0 (total 0.0)
+Reply status: 1xx=0 2xx=0 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 0.40 system 9.63 (user 3.9% system 96.0% total 100.0%)
+Net I/O: 0.1 KB/s (0.0*10^6 bps)
+
+Errors: total 1000 client-timo 1000 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+2017年 05月 14日 星期日 16:26:41 CST
+2017年 05月 14日 星期日 16:26:46 CST
+httperf --timeout=5 --client=0/1 --server=192.168.1.254 --port=8081 --uri=/Test/dynamic.jsp --rate=300 --send-buffer=4096 --recv-buffer=16384 --num-conns=1000 --num-calls=1
+Maximum connect burst length: 1
+
+Total: connections 1000 requests 14 replies 0 test-duration 11.012 s
+
+Connection rate: 90.8 conn/s (11.0 ms/conn, <=1000 concurrent connections)
+Connection time [ms]: min 0.0 avg 0.0 max 0.0 median 0.0 stddev 0.0
+Connection time [ms]: connect 1287.9
+Connection length [replies/conn]: 0.000
+
+Request rate: 1.3 req/s (786.6 ms/req)
+Request size [B]: 82.0
+
+Reply rate [replies/s]: min 0.0 avg 0.0 max 0.0 stddev 0.0 (2 samples)
+Reply time [ms]: response 0.0 transfer 0.0
+Reply size [B]: header 0.0 content 0.0 footer 0.0 (total 0.0)
+Reply status: 1xx=0 2xx=0 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 0.41 system 10.59 (user 3.7% system 96.2% total 99.9%)
+Net I/O: 0.1 KB/s (0.0*10^6 bps)
+
+Errors: total 1000 client-timo 1000 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+2017年 05月 14日 星期日 16:26:57 CST
+2017年 05月 14日 星期日 16:27:02 CST
+httperf --timeout=5 --client=0/1 --server=192.168.1.254 --port=8081 --uri=/Test/dynamic.jsp --rate=250 --send-buffer=4096 --recv-buffer=16384 --num-conns=1000 --num-calls=1
+Maximum connect burst length: 1
+
+Total: connections 1000 requests 14 replies 0 test-duration 11.010 s
+
+Connection rate: 90.8 conn/s (11.0 ms/conn, <=1000 concurrent connections)
+Connection time [ms]: min 0.0 avg 0.0 max 0.0 median 0.0 stddev 0.0
+Connection time [ms]: connect 1073.2
+Connection length [replies/conn]: 0.000
+
+Request rate: 1.3 req/s (786.4 ms/req)
+Request size [B]: 82.0
+
+Reply rate [replies/s]: min 0.0 avg 0.0 max 0.0 stddev 0.0 (2 samples)
+Reply time [ms]: response 0.0 transfer 0.0
+Reply size [B]: header 0.0 content 0.0 footer 0.0 (total 0.0)
+Reply status: 1xx=0 2xx=0 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 0.28 system 10.72 (user 2.6% system 97.3% total 99.9%)
+Net I/O: 0.1 KB/s (0.0*10^6 bps)
+
+Errors: total 1000 client-timo 1000 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+2017年 05月 14日 星期日 16:27:13 CST
+2017年 05月 14日 星期日 16:27:18 CST
+httperf --timeout=5 --client=0/1 --server=192.168.1.254 --port=8081 --uri=/Test/dynamic.jsp --rate=200 --send-buffer=4096 --recv-buffer=16384 --num-conns=1000 --num-calls=1
+Maximum connect burst length: 1
+
+Total: connections 1000 requests 16 replies 0 test-duration 12.011 s
+
+Connection rate: 83.3 conn/s (12.0 ms/conn, <=1000 concurrent connections)
+Connection time [ms]: min 0.0 avg 0.0 max 0.0 median 0.0 stddev 0.0
+Connection time [ms]: connect 939.0
+Connection length [replies/conn]: 0.000
+
+Request rate: 1.3 req/s (750.7 ms/req)
+Request size [B]: 82.0
+
+Reply rate [replies/s]: min 0.0 avg 0.0 max 0.0 stddev 0.0 (2 samples)
+Reply time [ms]: response 0.0 transfer 0.0
+Reply size [B]: header 0.0 content 0.0 footer 0.0 (total 0.0)
+Reply status: 1xx=0 2xx=0 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 0.38 system 11.62 (user 3.2% system 96.8% total 99.9%)
+Net I/O: 0.1 KB/s (0.0*10^6 bps)
+
+Errors: total 1000 client-timo 1000 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+2017年 05月 14日 星期日 16:27:30 CST
+2017年 05月 14日 星期日 16:27:35 CST
+httperf --timeout=5 --client=0/1 --server=192.168.1.254 --port=8081 --uri=/Test/dynamic.jsp --rate=150 --send-buffer=4096 --recv-buffer=16384 --num-conns=1000 --num-calls=1
+Maximum connect burst length: 1
+
+Total: connections 1000 requests 20 replies 0 test-duration 14.015 s
+
+Connection rate: 71.4 conn/s (14.0 ms/conn, <=751 concurrent connections)
+Connection time [ms]: min 0.0 avg 0.0 max 0.0 median 0.0 stddev 0.0
+Connection time [ms]: connect 901.4
+Connection length [replies/conn]: 0.000
+
+Request rate: 1.4 req/s (700.7 ms/req)
+Request size [B]: 82.0
+
+Reply rate [replies/s]: min 0.0 avg 0.0 max 0.0 stddev 0.0 (2 samples)
+Reply time [ms]: response 0.0 transfer 0.0
+Reply size [B]: header 0.0 content 0.0 footer 0.0 (total 0.0)
+Reply status: 1xx=0 2xx=0 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 0.41 system 13.59 (user 2.9% system 97.0% total 99.9%)
+Net I/O: 0.1 KB/s (0.0*10^6 bps)
+
+Errors: total 1000 client-timo 1000 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+2017年 05月 14日 星期日 16:27:49 CST
+2017年 05月 14日 星期日 16:27:54 CST
+httperf --timeout=5 --client=0/1 --server=192.168.1.254 --port=8081 --uri=/Test/dynamic.jsp --rate=100 --send-buffer=4096 --recv-buffer=16384 --num-conns=1000 --num-calls=1
+Maximum connect burst length: 1
+
+Total: connections 1000 requests 21 replies 0 test-duration 17.042 s
+
+Connection rate: 58.7 conn/s (17.0 ms/conn, <=501 concurrent connections)
+Connection time [ms]: min 0.0 avg 0.0 max 0.0 median 0.0 stddev 0.0
+Connection time [ms]: connect 573.3
+Connection length [replies/conn]: 0.000
+
+Request rate: 1.2 req/s (811.5 ms/req)
+Request size [B]: 82.0
+
+Reply rate [replies/s]: min 0.0 avg 0.0 max 0.0 stddev 0.0 (3 samples)
+Reply time [ms]: response 0.0 transfer 0.0
+Reply size [B]: header 0.0 content 0.0 footer 0.0 (total 0.0)
+Reply status: 1xx=0 2xx=0 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 0.65 system 16.38 (user 3.8% system 96.1% total 99.9%)
+Net I/O: 0.1 KB/s (0.0*10^6 bps)
+
+Errors: total 1000 client-timo 1000 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+2017年 05月 14日 星期日 16:28:11 CST
+2017年 05月 14日 星期日 16:28:16 CST
+httperf --timeout=5 --client=0/1 --server=192.168.1.254 --port=8081 --uri=/Test/dynamic.jsp --rate=50 --send-buffer=4096 --recv-buffer=16384 --num-conns=1000 --num-calls=1
+Maximum connect burst length: 1
+
+Total: connections 1000 requests 38 replies 0 test-duration 27.083 s
+
+Connection rate: 36.9 conn/s (27.1 ms/conn, <=254 concurrent connections)
+Connection time [ms]: min 0.0 avg 0.0 max 0.0 median 0.0 stddev 0.0
+Connection time [ms]: connect 712.2
+Connection length [replies/conn]: 0.000
+
+Request rate: 1.4 req/s (712.7 ms/req)
+Request size [B]: 82.0
+
+Reply rate [replies/s]: min 0.0 avg 0.0 max 0.0 stddev 0.0 (5 samples)
+Reply time [ms]: response 0.0 transfer 0.0
+Reply size [B]: header 0.0 content 0.0 footer 0.0 (total 0.0)
+Reply status: 1xx=0 2xx=0 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 0.89 system 26.18 (user 3.3% system 96.7% total 100.0%)
+Net I/O: 0.1 KB/s (0.0*10^6 bps)
+
+Errors: total 1000 client-timo 1000 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+2017年 05月 14日 星期日 16:28:43 CST

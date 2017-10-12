@@ -1,0 +1,38 @@
+* {
+	text-align: center;
+	margin: auto;
+	padding: 5px;
+}
+
+body {
+	background-color: #ffffff;
+}
+
+a {
+	color: #0000FF;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+ul {
+	display: block;
+}
+
+ul li {
+	list-style: none;
+	float: left;
+}
+
+table.grid {
+	border-collapse: collapse;
+	border: none;
+}
+
+table.grid td {
+	border: solid #000 1px;
+	padding: 10px;
+}
+
+video {
+	width: 80%;
+}
